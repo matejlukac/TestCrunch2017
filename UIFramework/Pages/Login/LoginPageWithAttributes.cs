@@ -6,13 +6,9 @@ namespace UIFramework
     public class LoginPageWithAttributes
     {
         // TODO 10: Find elements on the login page using FindsBy attribute
-        [FindsBy(How = How.Id, Using = "login_username")]
-        private IWebElement EmailTextbox;
-
-        [FindsBy(How = How.Id, Using = "login_password")]
-        private IWebElement PasswordTextbox;
-
-        [FindsBy(How = How.Id, Using = "btn-login")]
+        // [FindsBy(How = How.Id, Using = "login_username")]
+        private IWebElement EmailTextbox;        
+        private IWebElement PasswordTextbox;        
         private IWebElement SubmitButton;
 
         public void SignIn(string username, string password)

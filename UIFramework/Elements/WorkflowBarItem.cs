@@ -10,9 +10,9 @@ namespace UIFramework.Elements
         public static By BY(string workflowName = "")
         {
             return By.XPath($"//li[@class='bar-item__node'][.//*[contains(text(),'{workflowName}')]]");
-        }        
+        }
 
         // TODO 16: Implement edit workflow bar action
-        public IWebElement EditAction => Element.FindElement(By.XPath(".//div[@class='bar-item__action']"));
+        public IWebElement EditAction;
     }
 }
