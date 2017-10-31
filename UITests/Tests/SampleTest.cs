@@ -44,7 +44,16 @@ namespace UITests.Tests
         public void D_FindingElementsExample()
         {
             // TODO 9: Looking for elements  
-            // Fill in missing identifiers    
+            // Fill in missing identifiers
+            var driver = InitWebDriver();
+
+            driver.Navigate().GoToUrl(LoginPage.LOGIN_URL);
+            driver.FindElement(By.Name("")).SendKeys("TestCrunch2017@gmail.com");
+            driver.FindElement(By.XPath("")).SendKeys("TestCrunch2017");
+            driver.FindElement(By.TagName("")).Click();
+
+            driver.Quit();
+            driver.Dispose();
         }
 
         [Test]

@@ -42,7 +42,7 @@ namespace UIFramework
             var timeout = ImplicitWait;
             if (!wait)
             {
-                // TODO 12a: Set Implicit timeout to 0
+                // TODO 12a: Set Implicit timeout to zero
             }
 
             try
