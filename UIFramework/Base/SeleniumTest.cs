@@ -49,5 +49,15 @@ namespace UIFramework
             // Dispose the web driver
             Driver.Dispose();
         }
+
+        // TODO 19a: Implement a method that takes a screenshot
+        // Cast driver to ITakesScreenshot
+        // Use method GetScreenshot() to create a ScreenShot
+        // Save the screenshot with SaveAsFile method
+        public void TakeScreenShot(string path)
+        {
+            Screenshot ss = ((ITakesScreenshot)Driver).GetScreenshot();
+            ss.SaveAsFile(path, ScreenshotImageFormat.Png);
+        }
     }
 }

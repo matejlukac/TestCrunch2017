@@ -120,7 +120,9 @@ namespace UITests.Tests
             var listing = new WorkflowListingPage(Driver);
             listing.GoTo();
             listing.CreateWorkflow("test");
-            listing.EditWorkflow("test");            
+            listing.EditWorkflow("test");
+
+            TakeScreenShot("C:\\Logs\\mytest1.png");    
         }
     }
 }
