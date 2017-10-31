@@ -84,7 +84,9 @@ namespace UITests.Tests
         {
             // TODO 18: Workflow test
             // Create a new workflow
-            // Edit the created workflow         
+            // Edit the created workflow        
+
+            // TODO 19b: Create a screenshot in test
         }
     }
 }

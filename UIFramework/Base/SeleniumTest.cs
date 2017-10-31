@@ -38,5 +38,13 @@ namespace UIFramework
             // Decorate the method with [TearDown] attribute
             // Dispose the web driver            
         }
+
+        // TODO 19a: Implement a method that takes a screenshot
+        // Cast driver to ITakesScreenshot
+        // Use method GetScreenshot() to create a ScreenShot
+        // Save the screenshot with SaveAsFile method
+        public void TakeScreenShot(string path)
+        {
+        }
     }
 }
