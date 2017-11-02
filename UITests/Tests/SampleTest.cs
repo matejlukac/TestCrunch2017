@@ -106,7 +106,7 @@ namespace UITests.Tests
         [Test]
         public void G_CreateNewWorkflow()
         {
-            // TODO 18: Workflow test
+            // TODO 18a: Workflow test
             // Create a new workflow
             // Edit the created workflow
 
@@ -120,9 +120,13 @@ namespace UITests.Tests
             var listing = new WorkflowListingPage(Driver);
             listing.GoTo();
             listing.CreateWorkflow("test");
-            listing.EditWorkflow("test");
+            var editWorkflowElement = listing.EditWorkflow("test");
 
-            TakeScreenShot("C:\\Logs\\mytest1.png");    
+            // TODO 18b: Use assert in test
+            Assert.That(editWorkflowElement.GetName, Is.EqualTo("test"));
+
+            // TODO 19b: Create a screenshot in test
+            TakeScreenShot($"C:\\Logs\\{Guid.NewGuid().ToString()}mytest1.png");
         }
     }
 }
