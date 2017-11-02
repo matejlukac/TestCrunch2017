@@ -82,9 +82,12 @@ namespace UITests.Tests
         [Test]
         public void G_CreateNewWorkflow()
         {
-            // TODO 18: Workflow test
+            // TODO 18a: Workflow test
             // Create a new workflow
             // Edit the created workflow        
+
+            // TODO 18b: Use assert in test
+            // Assert the name of newly created workflow
 
             // TODO 19b: Create a screenshot in test
         }
