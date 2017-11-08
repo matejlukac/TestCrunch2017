@@ -10,25 +10,23 @@ namespace UIFramework.Elements
 
         public static By BY()
         {
-            return By.XPath("//li[@class='bar-item__node--create-new']");
+            return null;
         }
          
-        protected IWebElement NameTextbox => Element.FindElement(By.Name("name"));
-        protected IWebElement SaveButton => Element.FindElement(By.XPath(".//button[@type='submit']"));
+        protected IWebElement NameTextbox;
+        protected IWebElement SaveButton;
 
         public void SetName(string name)
         {
-            NameTextbox.SendKeys(name);
         }
 
         public string GetName()
         {
-            return NameTextbox.GetAttribute("value");
+            return null;
         }
 
         public void Save()
-        {
-            SaveButton.Click();
+        {            
         }
     }
 }

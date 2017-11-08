@@ -42,14 +42,13 @@ namespace UIFramework
             var timeout = ImplicitWait;
             if (!wait)
             {
-                // TODO 12a: Set Implicit timeout to 0
-                ImplicitWait = TimeSpan.FromSeconds(0);
+                // TODO 12a: Set Implicit timeout to zero
             }
 
             try
             {
                 // TODO 12b: Return all elements found by element selector
-                return InternalDriver.FindElements(by).ToList();
+                return null;
             }
             finally
             {
